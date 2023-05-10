@@ -1,0 +1,53 @@
+POST http://localhost:3000/login 
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+###
+post http://localhost:3000/register 
+Content-Type: application/json 
+
+
+{
+  "username": "adam_richard",
+  "name": "Adam Richard",
+  "password": "richard_567",
+  "gender": "male",
+  "location": "Detroit"
+}
+###
+
+Get http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYW1fcmljaGFyZCIsImlhdCI6MTY4MzY5MjcxMn0.lnr2-zV9fJN4ES4KqHwwF4wK4Jwk5E1WrgGWxPr5Kq0
+
+###
+GET http://localhost:3000/state/3 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYW1fcmljaGFyZCIsImlhdCI6MTY4MzY5MjcxMn0.lnr2-zV9fJN4ES4KqHwwF4wK4Jwk5E1WrgGWxPr5Kq0
+
+###
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYW1fcmljaGFyZCIsImlhdCI6MTY4MzY5MjcxMn0.lnr2-zV9fJN4ES4KqHwwF4wK4Jwk5E1WrgGWxPr5Kq0
+
+
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+
+
+###
+
+GET http://localhost:3000/districts/4/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYW1fcmljaGFyZCIsImlhdCI6MTY4MzY5MjcxMn0.lnr2-zV9fJN4ES4KqHwwF4wK4Jwk5E1WrgGWxPr5Kq0
+
+
